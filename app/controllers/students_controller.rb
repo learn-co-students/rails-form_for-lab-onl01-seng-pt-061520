@@ -1,10 +1,6 @@
 class StudentsController < ApplicationController
   before_action :find_student, only: [:show, :edit, :update]
 
-  def index
-    @students = Student.all
-  end
-  
   def new
     @student = Student.new
   end

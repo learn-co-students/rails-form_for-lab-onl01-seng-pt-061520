@@ -1,10 +1,7 @@
 class SchoolClassesController < ApplicationController
   before_action :find_sc, only: [:show, :edit, :update]
 
-  def index
-    @school_classes = SchoolClass.all
-  end
-  
+
   def new
     @school_class = SchoolClass.new
   end

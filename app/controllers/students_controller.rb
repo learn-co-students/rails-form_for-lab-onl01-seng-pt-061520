@@ -18,7 +18,7 @@ class StudentsController < ApplicationController
 
   private
 
-  def find_sc
+  def find_student
     @student = Student.find_by_id(params[:id])
     redirect_to students_path if !@student
   end

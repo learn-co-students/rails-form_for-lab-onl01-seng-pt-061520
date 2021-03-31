@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   resources :students
-  resources :school_class
+  resources :school_classes
 end
